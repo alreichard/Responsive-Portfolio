@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="outsidecss.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact</title>
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light d-flex flex-column h-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand my-auto colfix ml-5" href="#">Alex Reichard</a>
@@ -22,7 +22,7 @@
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <section class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="mx-auto navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
@@ -35,34 +35,40 @@
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0"></form>
-            </div>
+            </section>
         </nav>
     </header>
-    <div class="row">
-        <div class="col-md-8 col-10 card text-white rounded bg-dark mx-auto mt-5" style="width: 40rem;">
-            <div class="card-body">
+    <article class="row">
+        <main class="col-md-8 col-10 card text-white rounded bg-dark mx-auto mt-5" style="width: 40rem;">
+            <article class="card-body">
                 <h1 class="row justify-content-center">Card title</h1>
                 <hr>
-                <div class="mb-3">
+                <section class="mb-3">
                     <label for="Name">Name</label>
                     <input type="text" class="form-control" id="firstName" placeholder="John Smith" value="" required>
                     <div class="invalid-feedback"></div>
-                </div>
-                <div class="mb-3">
+                </section>
+                <section class="mb-3">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
                     <div class="invalid-feedback"></div>
-                </div>
+                </section>
 
-                <div class="form-group">
+                <section class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                </div>
+                </section>
                 <button type="button" class="btn button">Primary</button>
 
-            </div>
-        </div>
-    </div>
+            </article>
+        </main>
+    </article>
+    <footer class="footer mt-5 pt-5">
+        <section class="card-footer bg-dark">
+            
+            <i class="fa fa-linkedin-square" style="font-size:30px;color:#33cccc;"></i>
+        </section>
+    </footer>
 </body>
 
 </html>

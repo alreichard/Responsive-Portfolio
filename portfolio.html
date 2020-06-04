@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="outsidecss.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Portfolio</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-light d-flex flex-column h-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand my-auto colfix ml-5" href="#">Alex Reichard</a>
@@ -22,7 +22,7 @@
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <section class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="mx-auto navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
@@ -35,17 +35,17 @@
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0"></form>
-            </div>
+            </section>
         </nav>
     </header>
-    <div class="card mx-auto m-5" style="max-width: 600px">
-        <div class="pt-5 pb-5 text-white rounded bg-dark">
+    <article class="card mx-auto m-5" style="max-width: 600px">
+        <article class="pt-5 pb-5 text-white rounded bg-dark">
 
             <h1 class="row justify-content-center">Portfolio</h1>
             <hr class="mx-4">
 
 
-            <div class="row mb-3 justify-content-center">
+            <section class="row mb-3 justify-content-center">
 
                 <div class="col-">
                     <div class="card mt-3 mx-3" style="width: 16rem;">
@@ -66,8 +66,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
+            </section>
+            <section class="row justify-content-center">
                 <div class="col-">
                     <div class="card mt-5 mx-3" style="width: 16rem;">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
@@ -86,8 +86,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
+            </section>
+            <section class="row justify-content-center">
                 <div class="col-">
                     <div class="card mt-5 mx-3" style="width: 16rem;">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
@@ -103,15 +103,17 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
-        </div>
-    </div>
+        </article>
+    </article>
+    <footer class="footer mt-5 pt-5 ">
+        <section class="card-footer bg-dark">
+            
+            <i class="fa fa-linkedin-square" style="font-size:30px;color:#33cccc;"></i>
+        </section>
+    </footer>
 </body>
-<footer class="footer mt-auto py-3">
-    <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-</footer>
+
 
 </html>
