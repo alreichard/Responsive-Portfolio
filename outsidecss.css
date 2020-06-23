@@ -32,3 +32,9 @@ hr {
 a {
     color: #33cccc;
 }
+.block {
+    height:100px;
+    width: 250px;
+    background-color: gray;
+    
+}
